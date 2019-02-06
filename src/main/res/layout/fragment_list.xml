@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bianco_fumo"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="it.matteoavanzini.android.accordisbagliati.fragments.ListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="it.matteoavanzini.app.accordisbagliati.MainActivity"
+        tools:listitem="@layout/list_item" />
+
+    <TextView android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5pt"
+        android:text="No Items found"/>
+
+</LinearLayout>
